@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Shahid Afridi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <video autoplay loop muted playsinline class="back-video">
+                <source src="assets/ghost of tsunamia en.mp4" type="video/mp4">
+                <!-- Add more video sources for compatibility (WebM, etc.) -->
+            </video>
+            <nav role="navigation">
+                <div class="navbar-text">Shahid Afridi</div>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">Home</a></li>
+                        <li><a class="menu__item" href="#about">About</a></li>
+                        <li><a class="menu__item" href="#skills">Skills</a></li>
+                        <li><a class="menu__item" href="#projects">Projects</a></li>
+                        <li><a class="menu__item" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Shahid Afridi</h1>
+                <p class="section__text__p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/afrid resume.pdf', '_blank')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/shahidafridi26/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/linkedin-4-512.png" alt="LinkedIn profile" class="icon">
+                    </a>
+                    <a href="https://github.com/shahidafridi2609" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/github-10-512.png" alt="GitHub profile" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <script src="script.js"></script>
+    <!-- Optional: SVG filter for motion blur -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <filter id="motion-blur-filter" filterUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="100 0"></feGaussianBlur>
+        </filter>
+    </svg>
+</body>
+</html>
